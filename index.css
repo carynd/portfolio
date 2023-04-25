@@ -77,7 +77,10 @@ body {
 
 .row {
   max-width: var(--container-max-width);
+  width: 100%;
   margin: 0 auto;
+  /* max-width: var(--container-max-width);
+  margin: 0 auto; */
 }
 
 @media (max-width: 1340px) {
@@ -335,14 +338,39 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .nav {
-  display: flex;
+  /* display: flex;
   justify-content: flex-end;
-  padding: var(--gutter-normal) 0;
+  padding: var(--gutter-normal) 0; */
+  display: flex;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  flex-direction: row;
+  height: 12vh;
+  /* flex-wrap: nowrap; */
+  top: 0;
+  z-index: 999;
+  background-color: #000000;
+  box-sizing: border-box;
 }
 
 .nav__items {
+  position: sticky;
+  top: 0;
+  background-color: #000000;
   display: flex;
+  width: 100%;
+  height: 10vh;
   list-style: none;
+  padding: 1%;
+  /* display: flex;
+  list-style: none; */
+}
+
+.nav__items > li {
+  margin: auto;
 }
 
 .nav__item:not(:last-child) {
@@ -630,4 +658,62 @@ body:not(.user-is-tabbing) a:focus {
   box-shadow: rgba(21, 21, 24, 0.2) 0px 7px 29px 0px;
   
   
+}
+
+.sentence {
+  overflow: hidden;
+  border-right: .15em solid rgb(220, 50, 78); /* blinking cursor effect */
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation:
+    typing 4s steps(20, end),
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  0% { width: 0 }
+  33.33% { width: 100%; }
+  66.66% { width: 100%; }
+  100% { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--pink); }
+}
+
+/* optional styling */
+.text {
+  font-family: monospace;
+  font-size: 1.5em;
+  color: #fff;
+  background-color: #815959;
+  padding: 10px;
+  display: inline-block;
+}
+.sentence {
+  /* Set the cursor to a custom animated cursor */
+  cursor: url('orange-cursor.gif') 16 16, pointer;
+}
+
+/* Define the cursor animation */
+@keyframes cursor-color {
+  0% {
+    cursor: url('orange-cursor.gif') 16 16, pointer;
+  }
+  50% {
+    cursor: url('green-cursor.gif') 16 16, pointer;
+  }
+  100% {
+    cursor: url('blue-cursor.gif') 16 16, pointer;
+  }
+}
+
+/* Apply the animation to the .sentence element */
+.sentence:hover {
+  animation: cursor-color 2s infinite;
+}
+a{
+  color: var(--pink);
 }

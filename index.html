@@ -44,14 +44,16 @@
   <!-- ***** Header ***** -->
 
   <header class="header" role="banner" id="top">
-    <div class="row">
+    <div class="row" style="padding: 0px !important">
       <nav class="nav" role="navigation">
         <ul class="nav__items">
-          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-          <li class="nav__item"><a href="#clients" class="nav__link">Skills</a></li>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
+          <li class="nav__item"><a href="#work-experience" class="nav__link">Experience
+          </a></li>
+          <li class="nav__item"><a href="#clients" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
           <li class="nav__item">
             <a href="#contact" class="nav__link">Contact</a>
           </li>
@@ -68,37 +70,95 @@
           <span>Caryn Dsouza</span>
         </h1>
         <!-- Put a small paragraph about yourself -->
-        <p>A Full Stack Web Developer.</p>
+        <div class="sentence">
+          <span class="text"></span>
+        </div>
         <a href="#contact" class="btn btn--pink">Get in touch</a>
       </div>
     </div>
   </header>
 
+
   <main role="main">
 <!-- ***** About ***** -->
 
   
-    <section class="about" id="about">
-      <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
-          <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
-            <p class="card-text">Hi I'm a Full Stack Developer. My journey of full stack development began when I decided to join Masai School to gain profeciency in full stack development.</p>
-            <p class="card-text">I have done engineering in Electronics and Communication and I am adept in DSA, Javascript, Java, Spring and SQL. I am currently looking for an SDE role to help me enhance my skills and contribute towards the growth of the company</p>
+<section class="about" id="about">
+  <div class="row">
+    <h2>About Me</h2>
+    <div class="about__content">
+      <div class="about__text">
+        <!-- Replace the below paragraph with info about yourself -->
+        <p class="card-text">I'm Electronics and Communication Engineer with a keen interest in full stack web development</p>
+        <p class="card-text">My journey of full satck development began when I decided to join Masai School to gain profeciency in full satck development</p>
+        <p class="card-text">I am adept in DSA, Javascript, Java, Spring and SQL. I am currently looking for an SDE role to help me enhance my skills and contribute towards the growth of the company</p>
+        <!-- Provide a link to your resume -->
+        <a href="#" class="btn">My Resume</a>
+        <a href="images/fw11_206_Caryn_Dsouza..png" class="btn" download>Download File</a>
+      </div>
 
-            <!-- Provide a link to your resume -->
-            <a onclick="window.open('./images/fw11_206_Caryn_Dsouza.pdf')"
-            class="btn">My Resume</a>
+      <div class="about__photo-container">
+        <!-- Add a nice photo of yourself -->
+        <img class="about__photo" src="./images/pic.jpg" alt="" />
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ***** Work Expereince ***** -->
+    <section class="about" id="work-experience">
+      <div class="row">
+        <h2>Work Experience</h2> 
+        <div class="about__content">
+          
+          <div class="about__text">
+            <h1>Education</h1>
+              
+            
+            <!-- Replace the below paragraph with info about yourself -->
+            <div>
+              <h4>Masai School — Bangalore, KA.</h4>
+              <p>Full Stack Web Development |  July 2021 - January 2022</p>
+            </div>
+                
+               <div>
+                <h4>Vemana Institute of Technology  - Bangalore, KA.</h4>
+                <p>B.E in Electronics and Communicatin Engineering | June 2016 - September 2020</p>
+               </div>
+              
+            <!-- <a href="#" class="btn">My Resume</a>
+            <a href="path/to/your/file" download>Download File</a> -->
           </div>
 
-          <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/pic.jpg" alt="" />
+          <div class="about__photo-container"> 
+            
+            <!-- Education -->
+            <div class="about__text">
+              <div class="job">
+                <h4>Outleap Technologies — Bangalore, KA.</h4>
+                <h4>Java Backend Engineer |  February 2022 - February 2023</h4>
+                <div>
+                <h4>Responsibilities: </h4>
+                 <p>Worked in two key departments: LeapFinance(FinTech) and LeapScholar-IELTS(EdTech). Worked with technologies such as SpringBoot, Java, Kotlin, PostgreSQL and RDBMS.</p>
+               </div>
+               <div>
+                <h4>LeapFinance    |     Outleap's FinTech Brand  |   Feb-Aug 2022</h4>
+               </div>
+              <div>
+                <h4>LeapScholar-IELTS     |    Outleap's EdTech Brand  |   Aug 2022-Feb 2023</h4>
+              </div>
+
+              <!-- Replace the below paragraph with info about yourself -->
+              <!-- <p class="card-text">I'm Electronics and Communication Engineer with a keen interest in full stack web development</p>
+              <p class="card-text">My journey of full satck development began when I decided to join Masai School to gain profeciency in full satck development</p>
+              <p class="card-text">I am adept in DSA, Javascript, Java, Spring and SQL. I am currently looking for an SDE role to help me enhance my skills and contribute towards the growth of the company</p>
+              -->
+            </div>
           </div>
         </div>
       </div>
     </section>
+   
     <!-- ***** Skills ***** -->
 
     <section class="client" id="clients">
@@ -292,7 +352,7 @@
              
               <img  style="width:50px; height: 30px;"src="./images/phone-solid.svg" class="footer__social-image" alt="Github">
             </a>
-            <span>9902740444</span>
+            <span>7411753339</span>
           </span>
           </li>
            <li>
