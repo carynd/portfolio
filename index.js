@@ -94,3 +94,13 @@ navLinks.forEach(navLink => {
     event.target.classList.add('active');
   });
 });
+$(document).ready(function() {
+  $('#download-button').click(function() {
+      $.ajax({
+          url: 'https://main--caryn-resume.netlify.app/Resume.jpg',
+          success: function(response) {
+              $('#content').html(response);
+          }
+      });
+  });
+});
